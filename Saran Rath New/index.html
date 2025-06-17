@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Filter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Event Filter</h1>
+
+    <div class="filters">
+      <select id="dayFilter">
+        <option value="all">All Days</option>
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+      </select>
+
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="music">Music</option>
+        <option value="sports">Sports</option>
+        <option value="art">Art</option>
+      </select>
+    </div>
+
+    <div class="event-list">
+      <div class="event-item music monday" data-title="TedX Event" data-description="The event giving opportunities to gain Knowledge.">
+          TedX Event
+      </div>
+      <div class="event-item sports tuesday" data-title="Football Match" data-description="There is an event where local football teams compete.">
+          Football Match 
+      </div>
+      <div class="event-item art wednesday" data-title="Art Exhibition" data-description="Showcase of art and sculptures.">
+          Art Exhibition 
+      </div>
+      <div class="event-item music tuesday" data-title="DJ Concert" data-description="Event filled with lots of fun and entertainment.">
+          DJ Concert 
+      </div>
+      <div class="event-item sports monday" data-title="Cricket Game" data-description="Just a friendly neighborhood game.">
+          Cricket Game 
+      </div>
+      <div class="event-item art monday" data-title="Modern Art Display" data-description="Display event of some attractive Modern Art.">
+          Modern Art Display 
+      </div>
+    </div>
+  </div>
+
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
