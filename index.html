@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-CELL Event Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Register for E-CELL Event</h1>
+
+  <form id="registrationForm">
+    <input type="text" id="name" placeholder="Your Name" required /><br />
+    <input type="email" id="email" placeholder="Your Email" required /><br />
+    <button type="submit">Register</button>
+    <div class="message" id="message"></div>
+  </form>
+
+  <!-- Count Display Box -->
+  <div class="count-box">
+    Total Registered Attendees: <span id="attendeeCount">2</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
