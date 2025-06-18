@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(145deg, #000000, #0a0a0a);
+  color: #FFD700;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #FFD700;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(255, 215, 0, 0.2);
+}
+
+form {
+  background: #111;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(255, 215, 0, 0.1);
+  border: 1px solid #FFD700;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 92%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #FFD700;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #0e0e0e;
+  color: #FFD700;
+}
+
+input::placeholder {
+  color: #c9a700;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #FFD700;
+  color: #000;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff4d4d;
+}
+
+.success {
+  color: #00cc66;
+}
