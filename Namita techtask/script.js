@@ -1,6 +1,5 @@
 // Firebase config and setup
 const firebaseConfig = {
-    apiKey: "AIzaSyDUQLbkquWk8icYjKRF3ZAqVGo6dmzzQH4",
     authDomain: "event-timer-app-d8a84.firebaseapp.com",
     projectId: "event-timer-app-d8a84",
     storageBucket: "event-timer-app-d8a84.firebasestorage.app",

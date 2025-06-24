@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Countdown Timer</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>⏳ Event Countdown</h1>
+    <p id="countdown">Loading...</p>
+
+    <div class="set-time">
+      <input type="datetime-local" id="eventTimeInput" />
+      <button onclick="setEventTime()">Set Event Time</button>
+    </div>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

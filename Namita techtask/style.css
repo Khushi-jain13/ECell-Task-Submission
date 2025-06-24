@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://wallpaperaccess.com/full/8400563.jpg');
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffffdd;
+}
+
+.container {
+  background: rgb(255, 242, 242);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+
+#countdown {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #ffffffee;
+}
+
+
+.set-time {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.set-time input[type="datetime-local"] {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+
+.set-time input[type="datetime-local"]::placeholder {
+  color: #ccc;
+}
+
+.set-time button {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.set-time button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+#set-time button:active {
+  transform: scale(0.95);
+}
+
+#status {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #ffffffbb;
+}
